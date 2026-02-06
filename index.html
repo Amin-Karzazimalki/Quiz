@@ -43,6 +43,9 @@
       justify-content: center;
       align-items: center;
       overflow-x: hidden;
+   
+  padding-top: 80px;   /* ou 90px selon la hauteur réelle */
+
     }
 
     .container {
@@ -229,20 +232,23 @@
 <body>
 <header style="
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 1.1rem 1rem;
   text-align: center;
-  padding: 1rem;
- background: #666666;             
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #cbd5e1;
-  border-top: 1px solid rgba(0,255,255,0.08);
-  font-size: 0.95rem;
-  z-index: 10;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c084fc;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 ">
-   AMIN KARZAZI 
+  AMIN KARZAZI
 </header>
 <div class="container" id="app">
 
@@ -456,6 +462,7 @@ function shuffle(array) {
 </body>
 
 </html>
+
 
 
 
